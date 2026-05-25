@@ -1,0 +1,18 @@
+{
+  "name": "daily-reels-automator",
+  "version": "1.0.0",
+  "description": "Auto-generates Instagram Reel ideas with Claude AI and posts daily via Graph API",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "now": "node index.js --now",
+    "test": "node index.js --test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "node-cron": "^3.0.3"
+  }
+}
