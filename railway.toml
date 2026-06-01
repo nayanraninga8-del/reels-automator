@@ -1,0 +1,10 @@
+[build]
+builder = "NIXPACKS"
+
+[build.nixpacksPlan.phases.setup]
+nixPkgs = ["ffmpeg", "python312", "python312Packages.pillow"]
+
+[deploy]
+startCommand = "node index.js"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
